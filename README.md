@@ -27,7 +27,7 @@ This model ran a series of spatial analyzes to support the understanding of scho
 | Input        | Type   | Comment  |
 | ------------ | ------ | ------------ |
 | Fiber Nodes  | vector | point data, unique id = "ID"  |
-| School Data  | vector | point data, unique id = "id"  |
+| School Data  | vector | point data, unique id = "giga_school_id"  |
 | Cell Towers  | vector | point data, model creates auto incremented field and uses it as an id so, no need to indicate another.  |
 | 2G Coverage  | raster | -  |
 | 3G Coverage  | raster | -  |
@@ -49,8 +49,10 @@ The model creates a new vector point data based on the school input and adds the
 | Attribute               | Description  |
 | ----------------------- | ------------ | 
 | fiber_node_distance     |  the distance of each school to the nearest fiber node in km |
+| microwave_node_distance     |  the distance of each school to the nearest mw node in km |
 | nearest_school_distance   | the distance of each school to the nearest school node in km  |
 | Schools_within_1km   | number of schools in a circle with a radius of one km centering a school point  |
+| Schools_within_2km   | number of schools in a circle with a radius of two km centering a school point  |
 | Schools_within_3km   | number of schools in a circle with a radius of three km centering a school point  |
 | Schools_within_10km   | number of schools in a circle with a radius of ten km centering a school point  |
 | nearest_LTE_id   | unique id automatically assigned to each base station by the model  |
@@ -63,37 +65,6 @@ The model creates a new vector point data based on the school input and adds the
 | 3G   | Returns a boolean result based on the condition that the school point stays within the 3G coverage raster image; "0"=no, "1"=strong "2"=variable |
 | 4G   | Returns a boolean result based on the condition that the school point stays within the 4G coverage raster image; "0"=no, "1"=strong "2"=variable |
 | pop_within_1km   | number of total population in a circle with a radius of one km centering a school point  |
+| pop_within_2km   | number of total population in a circle with a radius of two km centering a school point  |
 | pop_within_3km   | number of total population in a circle with a radius of three km centering a school point  |
-| pop_within_7km   | number of total population in a circle with a radius of seven km centering a school point  |
-																
-## About Telco Infrastructure Gap Model
-
-This model runs a series of spatial analyzes to find gaps in the country/region/state connectivity infrastructure, and it was created with the help of the QGIS graphical modeler. It uses territory boundaries, telecom infrastructure (fiber nodes, mobile coverage areas), and census data as input. Gives proportional outputs for each region that the population is covered by the mobile coverage, and the distance to the fiber nodes.
-
-### Inputs
-
- 
-| Input        | Type   | Comment  |
-| ------------ | ------ | ------------ |
-| Fiber Nodes  | vector | point data, unique id = "ID"  |
-| Admin Boundaries  | vector | multipolygon data,  |
-| 2G Coverage  | raster | -  |
-| 3G Coverage  | raster | -  |
-| 4G Coverage  | raster | -  |
-| Population   | raster | -  |
-
-### Outputs
-
-
-| Attribute               | Description  |
-| ----------------------- | ------------ | 
-| fiberaway10     | the sum of the population that is at least 10 km away from the fiber nodes in the given administrative boundary level |
-| fiberaway25   | the sum of the population that is at least 25 km away from the fiber nodes in the given administrative boundary level|
-| 2G covered Population Stats   | the sum of the population that is covered by 2G  |
-| 3G covered Population Stats   | the sum of the population that is covered by 3G  |
-| 4G covered Population Stats   | the sum of the population that is covered by 4G  |
-
-
-## License
-
-This project is licensed under the MIT License.
+| pop_within_10km  | number of total population in a circle with a radius of ten km centering a school point  |
