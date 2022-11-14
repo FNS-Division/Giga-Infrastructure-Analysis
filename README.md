@@ -17,7 +17,7 @@ The International Telecommunication Union (ITU) is the United Nations specialize
 
 * Open QGIS - Click on Processing tab and select Graphical Modeler - Select the folder icon  ![folder](https://svgshare.com/i/_Zw.svg)  and indicate where you downloaded the model - Specify the inputs and run by clicking play icon ![play](https://i.ibb.co/dP6B46M/Play.png)
 
-## About School Connectivity Model
+## About Infrastructure Analysis Model
 
 This model ran a series of spatial analyzes to support the understanding of school connectivity and was created with the help of the QGIS graphical modeler. It uses school, telecom infrastructure (fiber nodes, base stations, mobile coverages), and census data as inputs. It provides distance information for each school on possible Internet provisioning options and population statistics with the preset distances around schools.
 
