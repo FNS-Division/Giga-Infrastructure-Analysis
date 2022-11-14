@@ -28,7 +28,7 @@ This model ran a series of spatial analyzes to support the understanding of scho
 | ------------ | ------ | ------------ |
 | Fiber Nodes  | vector | point data, unique id = "ID"  |
 | Microwave Nodes  | vector | point data, unique id = "ID"  |
-| School Data  | vector | point data, unique id = "giga_school_id"  |
+| School Data  | vector | point data, unique id = "giga_id_school"  |
 | Cell Towers  | vector | point data, model creates auto incremented field and uses it as an id so, no need to indicate another.  |
 | 2G Coverage  | raster | -  |
 | 3G Coverage  | raster | -  |
