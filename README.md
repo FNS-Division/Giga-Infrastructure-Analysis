@@ -69,3 +69,8 @@ The model creates a new vector point data based on the school input and adds the
 | pop_within_2km   | number of total population in a circle with a radius of two km centering a school point  |
 | pop_within_3km   | number of total population in a circle with a radius of three km centering a school point  |
 | pop_within_10km  | number of total population in a circle with a radius of ten km centering a school point  |
+
+
+License
+
+See the [LICENSE](license.md) file for license rights and limitations (GPLv3).
