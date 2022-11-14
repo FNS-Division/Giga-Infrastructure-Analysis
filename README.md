@@ -6,7 +6,7 @@ The International Telecommunication Union (ITU) is the United Nations specialize
 
 ## About Giga
 
-[Giga](https://gigaconnect.org/), an initiative launched by UNICEF and ITU in September 2019 to connect every school to the Internet and every young person to information, opportunity and choice, is supporting the immediate response to COVID19, as well as looking at how connectivity can create stronger infrastructures of hope and opportunity in the "time after COVID."
+[Giga](https://giga.global/), an initiative launched by UNICEF and ITU in September 2019 to connect every school to the Internet and every young person to information, opportunity and choice, is supporting the immediate response to COVID19, as well as looking at how connectivity can create stronger infrastructures of hope and opportunity in the "time after COVID."
 
 ### Dependencies
 
