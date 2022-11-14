@@ -73,4 +73,4 @@ The model creates a new vector point data based on the school input and adds the
 
 License
 
-See the [LICENSE](license.md) file for license rights and limitations (GPLv3).
+See the [LICENSE](LICENSE.md) file for license rights and limitations (GPLv3).
